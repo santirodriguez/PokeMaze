@@ -36,13 +36,13 @@ a (allegedly! don't be ignorant!) poke snake mix # ASCII PokeMaze++
 Run a non-interactive demo to see how it plays:
 
 ```bash
-python pokemaze.py --demo --quiet-title
+python PokeMaze.py --demo --quiet-title
 ```
 
 For reproducible runs, set a random seed:
 
 ```bash
-python pokemaze.py --demo --seed 1234
+python PokeMaze.py --demo --seed 1234
 ```
 
 ---
@@ -53,12 +53,12 @@ python pokemaze.py --demo --seed 1234
 2. **Run**:
 
    ```bash
-   python pokemaze.py
+   python PokeMaze.py
    ```
 3. (Optional) Disable ANSI colors:
 
    ```bash
-   python pokemaze.py --no-color
+   python PokeMaze.py --no-color
    # or export NO_COLOR=1
    ```
 
@@ -231,22 +231,22 @@ Tweak gameplay from the command line:
 * Normal run (no colors):
 
   ```bash
-  python pokemaze.py --no-color
+  python PokeMaze.py --no-color
   ```
 * Chaos mode (more enemies + mystery):
 
   ```bash
-  python pokemaze.py --enemies 10 --mystery 8
+  python PokeMaze.py --enemies 10 --mystery 8
   ```
 * Demo, reproducible seed:
 
   ```bash
-  python pokemaze.py --demo --seed 42 --quiet-title
+  python PokeMaze.py --demo --seed 42 --quiet-title
   ```
 * Hard mode without wrap:
 
   ```bash
-  python pokemaze.py --hard --no-wrap
+  python PokeMaze.py --hard --no-wrap
   ```
 
 ---
@@ -274,7 +274,7 @@ After you win or lose, a summary displays:
 Built-in test suite (no extra dependencies):
 
 ```bash
-python pokemaze.py --test
+python PokeMaze.py --test
 ```
 
 Tests cover: HP bar, map shape, placement collisions, enemy attack randomness, demo key validity, item usage, and map rendering.
